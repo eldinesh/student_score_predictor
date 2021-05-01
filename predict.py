@@ -16,3 +16,7 @@ plt.title('Studied Hours Graph')
 plt.xlabel('Hours')
 plt.ylabel('Marks %')
 plt.show()
+
+#classification of data for in and out
+X = s_data.iloc[:, :-1].values
+y = s_data.iloc[:, 1].values
