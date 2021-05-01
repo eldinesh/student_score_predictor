@@ -36,4 +36,9 @@ line = regressor.predict(x)
 # Plotting for the test data
 plt.scatter(x, y)
 plt.plot(x, line);
-plt.show()
+#plt.show()
+
+y_pred = regressor.predict(x) # Predicting the scores
+
+df = pd.DataFrame({'Actual': y, 'Predicted': y_pred})  # Comparing Actual vs Predicted
+print("Comparision btw Actual vs Predicted", '\n', df)
