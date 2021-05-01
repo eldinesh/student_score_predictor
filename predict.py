@@ -29,3 +29,11 @@ from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()  
 regressor.fit(x_train, y_train) 
 print("Training Completed")
+
+# Plotting the regression line
+line = regressor.predict(x)
+
+# Plotting for the test data
+plt.scatter(x, y)
+plt.plot(x, line);
+plt.show()
